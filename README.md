@@ -2,7 +2,7 @@
 
 A complete, production-grade Kubernetes deployment on a self-hosted Minikube cluster demonstrating all core K8s concepts used in real-world environments.
 
-**Author:** Eldho Sabu | AWS DevOps Intern  
+**Author:** Eldho Sabu | AWS DevOps Intern 
 **Cluster:** Self-hosted Minikube | **Docker Image:** `eldho10/k8s-webapp:latest`
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.35-326CE5?style=flat&logo=kubernetes&logoColor=white)
