@@ -6,19 +6,19 @@ A complete, production-grade Kubernetes deployment on a self-hosted Minikube clu
 
 
 
-\*\*Author:\*\* Eldho Sabu | AWS DevOps Intern @ Cokonet Academy
+\*\*Author:\*\* Eldho Sabu | AWS DevOps Intern @ Cokonet Academy  
 
 \*\*Cluster:\*\* Self-hosted Minikube | \*\*Docker Image:\*\* `eldho10/k8s-webapp:latest`
 
 
 
-\[!\[Kubernetes](https://img.shields.io/badge/Kubernetes-v1.35-326CE5?style=flat\&logo=kubernetes\&logoColor=white)](https://kubernetes.io/)
+!\[Kubernetes](https://img.shields.io/badge/Kubernetes-v1.35-326CE5?style=flat\&logo=kubernetes\&logoColor=white)
 
-\[!\[Docker](https://img.shields.io/badge/Docker-29.3.1-2496ED?style=flat\&logo=docker\&logoColor=white)](https://www.docker.com/)
+!\[Docker](https://img.shields.io/badge/Docker-29.3.1-2496ED?style=flat\&logo=docker\&logoColor=white)
 
-\[!\[Node.js](https://img.shields.io/badge/Node.js-18--alpine-339933?style=flat\&logo=node.js\&logoColor=white)](https://nodejs.org/)
+!\[Node.js](https://img.shields.io/badge/Node.js-18--alpine-339933?style=flat\&logo=node.js\&logoColor=white)
 
-\[!\[Minikube](https://img.shields.io/badge/Minikube-v1.38.1-F7931E?style=flat)](https://minikube.sigs.k8s.io/)
+!\[Minikube](https://img.shields.io/badge/Minikube-v1.38.1-F7931E?style=flat)
 
 
 
@@ -78,33 +78,33 @@ k8s-production-app/
 
 ├── app/
 
-│   ├── server.js                 # Node.js app with /healthz and /ready endpoints
+│   ├── server.js                  # Node.js app with /healthz and /ready endpoints
 
-│   └── Dockerfile                # Non-root Alpine-based image
+│   └── Dockerfile                 # Non-root Alpine-based image
 
 ├── k8s/
 
 │   └── base/
 
-│       ├── 00-namespace.yaml     # production namespace
+│       ├── 00-namespace.yaml      # production namespace
 
-│       ├── 01-configmap.yaml     # APP\_ENV, PORT, LOG\_LEVEL
+│       ├── 01-configmap.yaml      # APP\_ENV, PORT, LOG\_LEVEL
 
-│       ├── 02-secret.yaml        # DB\_PASSWORD, API\_KEY, JWT\_SECRET
+│       ├── 02-secret.yaml         # DB\_PASSWORD, API\_KEY, JWT\_SECRET
 
-│       ├── 03-deployment.yaml    # 3 replicas, probes, resources, rolling update
+│       ├── 03-deployment.yaml     # 3 replicas, probes, resources, rolling update
 
-│       ├── 04-service.yaml       # ClusterIP + NodePort
+│       ├── 04-service.yaml        # ClusterIP + NodePort
 
-│       ├── 05-ingress.yaml       # nginx Ingress → webapp.local
+│       ├── 05-ingress.yaml        # nginx Ingress → webapp.local
 
-│       ├── 06-hpa.yaml           # CPU 60% / Memory 70% thresholds
+│       ├── 06-hpa.yaml            # CPU 60% / Memory 70% thresholds
 
 │       ├── 07-resource-quota.yaml # Namespace quota + LimitRange
 
-│       └── 08-pdb.yaml           # minAvailable: 2
+│       └── 08-pdb.yaml            # minAvailable: 2
 
-├── screenshots/                  # All project screenshots
+├── screenshots/                   # All project screenshots
 
 └── README.md
 
@@ -237,6 +237,10 @@ minikube start --driver=docker --memory=4096 --cpus=2
 minikube status
 
 ```
+
+
+
+!\[Minikube Status](screenshots/minikube\_status.png)
 
 
 
@@ -654,7 +658,7 @@ Image hosted on Docker Hub: \[hub.docker.com/r/eldho10/k8s-webapp](https://hub.d
 
 
 
-\*\*Eldho Sabu\*\*
+\*\*Eldho Sabu\*\*  
 
 B.Voc Information Technology | AWS DevOps Intern @ Cokonet Academy, Trivandrum
 
